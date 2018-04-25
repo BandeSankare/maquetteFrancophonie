@@ -1,0 +1,72 @@
+.nav{
+  
+    margin: 0px;
+     
+}
+.menuprincipal{
+    text-align: center;
+    position: fixed;
+
+}
+.menu{
+    border-bottom: 2px solid black;
+    list-style-type: none;
+    display: inline-block;
+    margin:5px;
+    padding: 5px;   
+}
+.menu:hover{
+    border-bottom: 3px solid red;
+
+
+}
+.submenu{
+    list-style-type: none;
+    display: none;
+      margin-top:7px;
+    padding: 0px;
+    border-radius: 6px;
+    background-color: white;
+}
+li a{
+    text-decoration: none;
+    font-size: 1em;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-decoration-color: none;
+    color: black;
+    display: block;
+
+}
+.menu:hover .submenu{
+    display: block;
+    position:absolute; /*pour afficher les sous menu 
+    en dessou des autre element*/
+      z-index: 1000000;
+}
+.menu:selected .submenu{
+    display: block;
+    position:absolute; /*pour afficher les sous menu 
+    en dessou des autre element*/
+}
+.lastmenu{
+   margin-top: 5px;
+   height: 30px;
+   line-height: 30px;
+   width: 275px;
+   box-shadow: 1px 1px 3px gray;
+
+}
+.lastmenu:hover{
+     border-bottom: 2px solid red;
+
+}
+.lastmenu a{
+    margin: 5px;
+     color: black;
+}
+.lastmenu a:hover, .menu a:hover{
+     color: red;
+}
+
+
